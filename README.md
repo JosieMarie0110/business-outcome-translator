@@ -74,3 +74,37 @@ Asset discovery initiatives support stronger enterprise visibility and reduce un
 ---
 
 ## Project Structure
+
+business-outcome-translator
+│
+├── app.py
+├── prompts.py
+├── requirements.txt
+├── README.md
+│
+└── company_profiles
+  ├── forescout.json
+  ├── company a
+  └── company b
+
+
+  
+Company profiles define product capabilities and value language that the tool uses to generate outcomes.
+
+This allows the same application to be reused across different vendors or product portfolios.
+
+---
+
+## Tech Stack
+
+- Python  
+- Gradio (UI framework)  
+- OpenAI API  
+- JSON configuration for company profiles  
+
+---
+
+## Running the Application
+
+Clone the repository:
+
