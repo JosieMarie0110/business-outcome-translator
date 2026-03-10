@@ -1,0 +1,51 @@
+{
+  "company_name": "Forescout",
+  "company_description": "Cybersecurity platform focused on asset visibility, device intelligence, and policy-based control.",
+  "default_audience_messages": {
+    "Executive": "Focus on business value, risk reduction, operational efficiency, and strategic impact.",
+    "Security": "Focus on visibility, control, compliance, and reduced risk exposure.",
+    "Operations": "Focus on operational efficiency, automation, and faster issue response."
+  },
+  "product_capabilities": [
+    {
+      "name": "Asset Discovery",
+      "category": "Visibility",
+      "description": "Continuously discovers and classifies connected devices across the environment.",
+      "operational_outcomes": [
+        "improves visibility into connected devices",
+        "identifies unmanaged and unknown assets",
+        "strengthens inventory accuracy"
+      ],
+      "business_values": [
+        "reduces security risk from unknown assets",
+        "improves operational awareness",
+        "supports stronger compliance posture"
+      ],
+      "sample_stakeholder_messages": {
+        "Executive": "Improves visibility across the environment and reduces risk associated with unmanaged assets.",
+        "Security": "Provides continuous discovery and classification of connected devices to reduce blind spots.",
+        "Operations": "Helps maintain a more accurate inventory and respond faster to device-related issues."
+      }
+    },
+    {
+      "name": "Policy-Based Control",
+      "category": "Control",
+      "description": "Applies policy-based enforcement to manage device access and compliance.",
+      "operational_outcomes": [
+        "enforces device access policies",
+        "restricts unauthorized device connectivity",
+        "improves response to non-compliant assets"
+      ],
+      "business_values": [
+        "reduces exposure to policy violations",
+        "improves enforcement consistency",
+        "supports risk reduction across the environment"
+      ],
+      "sample_stakeholder_messages": {
+        "Executive": "Strengthens the organization’s ability to enforce security controls consistently across connected assets.",
+        "Security": "Supports automated enforcement for devices that violate policy or present elevated risk.",
+        "Operations": "Reduces manual effort required to identify and respond to non-compliant devices."
+      }
+    }
+  ]
+}
