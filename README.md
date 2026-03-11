@@ -76,7 +76,7 @@ Asset discovery initiatives support stronger enterprise visibility and reduce un
 ## Project Structure
 
 business-outcome-translator
-│
+
 ├── app.py
 ├── prompts.py
 ├── requirements.txt
