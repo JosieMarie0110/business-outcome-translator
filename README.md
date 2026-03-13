@@ -30,7 +30,7 @@ The tool takes customer context, product capability, and audience type as inputs
 - Support multiple company product profiles via configurable JSON files
 
 
-<img width="1545" height="939" alt="image" src="https://github.com/user-attachments/assets/1594e3ce-8432-4259-a91a-11f33e1918ba" />
+<img width="1755" height="1081" alt="image" src="https://github.com/user-attachments/assets/0f3cfc51-8ac9-49a4-b698-9dd9748362c3" />
 
 
 ---
