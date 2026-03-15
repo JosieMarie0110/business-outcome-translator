@@ -16,7 +16,9 @@ def build_outcome_prompt(
 ) -> str:
     return dedent(
         f"""
-        You are helping a Customer Success Manager translate product capabilities into business outcomes.
+        You are a senior Customer Success Manager helping translate technical product capabilities into clear business outcomes and executive-friendly value narratives.
+
+        Your job is to explain how a product capability helps a customer achieve a meaningful operational or business result. Focus on value realization, risk reduction, efficiency, visibility, adoption, or strategic impact where relevant.
 
         Company:
         {company_name}
@@ -51,18 +53,26 @@ def build_outcome_prompt(
         Customer challenge:
         {customer_challenge or "Not provided."}
 
-        Write the response with these exact sections:
-        1. Operational Outcome
-        2. Business Value
-        3. Executive Narrative
-        4. QBR Talking Point
+        Write the response using these exact section headings:
+        Operational Outcome
+        Business Value
+        Executive Narrative
+        QBR Talking Point
 
         Requirements:
-        - Translate the capability into business language.
-        - Do not just restate the product feature.
-        - Tie the output to the customer challenge and goal.
-        - Keep the tone professional and customer-facing.
-        - Avoid unnecessary jargon.
+        - Translate the capability into business language, not just product language.
+        - Do not repeat the customer goal or challenge word-for-word unless necessary.
+        - Explain what operationally improves for the customer.
+        - Tie the output to the customer's challenge, priorities, and desired outcomes.
+        - Make the Business Value section specific and meaningful.
+        - Make the Executive Narrative sound appropriate for leadership stakeholders.
+        - Make the QBR Talking Point concise, polished, and customer-facing.
+        - Keep the tone professional, strategic, and clear.
+        - Avoid unnecessary jargon, fluff, and repetitive phrasing.
+        - Do not use bullet points.
+        - Keep each section concise but substantive.
+
+        Good output should sound like something a Customer Success Manager, TAM, or account leader could actually use in an EBR, QBR, or executive update.
         """
     ).strip()
 
@@ -74,21 +84,32 @@ def build_fallback_outcome(
     customer_goal: str,
     customer_challenge: str,
 ) -> str:
-    op_outcome = operational_outcomes[0] if operational_outcomes else "supports a relevant operational improvement"
-    biz_value = business_values[0] if business_values else "supports stronger business outcomes"
+    op_outcome = (
+        operational_outcomes[0]
+        if operational_outcomes
+        else "improves operational execution and visibility"
+    )
+    biz_value = (
+        business_values[0]
+        if business_values
+        else "supports stronger business outcomes and risk reduction"
+    )
+
+    goal_text = customer_goal or "a key business priority"
+    challenge_text = customer_challenge or "an identified operational challenge"
 
     return dedent(
         f"""
         Operational Outcome
-        {capability_name} helps the customer by enabling a capability that {op_outcome}.
+        {capability_name} enables the customer to improve how they operate by supporting a capability that {op_outcome}.
 
         Business Value
-        This supports the customer’s goal by helping address the challenge of {customer_challenge or "an identified business issue"} and {biz_value}.
+        This creates business value by helping address {challenge_text} while supporting {biz_value}. It helps connect product capability to a clearer operational and strategic outcome.
 
         Executive Narrative
-        By using {capability_name}, the customer can better support the goal of {customer_goal or "improving business performance"} while addressing the challenge of {customer_challenge or "current operational limitations"}.
+        By using {capability_name}, the customer is better positioned to support the goal of {goal_text}. This capability helps improve execution against an important business priority while strengthening the organization’s ability to operate more effectively.
 
         QBR Talking Point
-        This initiative helps connect product capability to a meaningful customer outcome by improving execution against a key business priority.
+        This capability helps advance the customer’s goal of {goal_text} by improving operational execution and delivering clearer business value against a meaningful priority.
         """
     ).strip()
