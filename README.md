@@ -1,3 +1,7 @@
+
+### Project Status
+Actively under development
+
 # Business Outcome Translator
 
 A lightweight tool that helps Customer Success Managers translate product capabilities into clear business outcomes and executive-ready value narratives.
