@@ -1,4 +1,4 @@
-# Python
+k# Python
 venv/
 __pycache__/
 *.pyc
@@ -14,10 +14,12 @@ __pycache__/
 *_backup.py
 *_backup_*.json
 *_backup_*.md
+*_backup_*.md~
 *_last_good.py
 *_last_good_*.py
 *_last_good.json
 *_working.py
+*_before_restore.py
 
 # Backup folders
 *_backup/
