@@ -102,22 +102,5 @@ This tool focuses on:
 
 
 
----
-
-## Project Structure
-
-business-outcome-translator
-
-├── app.py
-├── prompts.py
-├── requirements.txt
-├── README.md
-│
-└── company_profiles
-  ├── forescout.json
-  ├── company a
-  └── company b
-
-
 
 
