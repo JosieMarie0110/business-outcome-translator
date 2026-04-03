@@ -6,35 +6,7 @@ Actively under development
 
 A lightweight tool that helps Customer Success teams translate product capabilities into clear business outcomes and executive-ready messaging.
 
----
-
-## Overview
-
 Bridges the gap between technical capabilities and business value.
-
-Designed to help CSMs clearly answer:
-**How does this product drive real outcomes for the customer?**
-
----
-
-## Problem
-
-CSMs often understand features—but struggle to communicate:
-- Business impact  
-- Risk reduction  
-- Operational value  
-
-This leads to weak messaging in QBRs and executive conversations.
-
----
-
-## Solution
-
-Generates structured outcome narratives from:
-
-- Customer context  
-- Product capability  
-- Audience type  
 
 ---
 
@@ -72,24 +44,6 @@ Improve visibility into unmanaged devices
 - Narrative: Clear executive-level explanation  
 - QBR: Talking point for stakeholder alignment  
 
----
-
-## Features
-
-- Capability → outcome translation  
-- Executive-ready messaging  
-- QBR support  
-- Configurable product profiles (JSON)  
-
----
-
-## Why It Matters
-
-Customer Success is not just about product knowledge—  
-it’s about communicating value clearly.
-
-This tool focuses on:
-**turning technical capability into business impact.**
 
 ---
 
